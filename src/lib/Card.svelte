@@ -3,10 +3,10 @@
 	export let post;
 </script>
 
-<article class="card bordered flex-shrink w-80 m-5">
+<article class="card flex-auto bordered m-3 md:w-80">
 	<figure>
 		<a href={post.link}>
-			<img use:lazyimage data-src={post.image} alt={post.title} />
+			<img class="w-full" use:lazyimage data-src={post.image} alt={post.title} />
 		</a>
 	</figure>
 	<div class="card-body">
